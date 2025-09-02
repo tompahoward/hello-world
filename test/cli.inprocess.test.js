@@ -1,10 +1,11 @@
 import { describe, it, expect, vi } from 'vitest';
 import { runCli } from '../src/index.js';
+import { installConsoleLogSpy } from './utils/cli.js';
 
 describe('in-process CLI execution', () => {
   it('executes runCli and logs Hello, World!', async () => {
-    // Ensure console.log calls are captured but not printed during tests
-    const logSpy = vi.spyOn(console, 'log').mockImplementation(() => {});
+    // Use the shared helper to install a console.log spy and keep tests concise
+    const logSpy = installConsoleLogSpy(vi);
     try {
       // Call the exported entrypoint directly so coverage is recorded in-process
       await runCli();
