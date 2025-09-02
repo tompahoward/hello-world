@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node ./src/index.js",
     "test": "vitest",
-    "lint": "eslint --ext .js .",
+    "lint": "eslint --config .eslintrc.cjs --ext .js .",
     "format": "prettier --write ."
   },
   "keywords": [],
