@@ -2,16 +2,20 @@
   "name": "hello-world",
   "version": "1.0.0",
   "type": "module",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "start": "node ./src/index.js",
-    "test": "vitest"
+    "test": "vitest",
+    "lint": "eslint --ext .js .",
+    "format": "prettier --write ."
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "description": "",
   "devDependencies": {
-    "vitest": "^3.2.4"
+    "vitest": "^3.2.4",
+    "eslint": "^9.34.0",
+    "prettier": "^2.8.8"
   }
 }

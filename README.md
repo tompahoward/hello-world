@@ -1,27 +1,39 @@
-# Hello World CLI
+# Hello World
 
-This is a minimal Node.js ESM CLI that prints "Hello, World!".
+A minimal Node.js ESM CLI that prints "Hello, World!" and exposes a hello() function for use as a module.
 
-Installation
+## Installation
 
-1. Install dependencies:
+```bash
+npm ci
+```
 
-   npm install
-
-Usage
+## Usage
 
 Run the CLI:
 
-   npm start
+```bash
+npm start
+```
 
-Expected output:
+Or import the function in your code:
 
-   Hello, World!
+```js
+import { hello } from './src/index.js';
+console.log(hello()); // 'Hello, World!'
+```
 
-Testing
+## Developer
 
-Run the test suite:
+Recommended Node.js version: >= 18
 
-   npm test
+Quality checks:
 
-The tests verify the exported function and the CLI output.
+- Lint: `npm run lint`
+- Format: `npm run format`
+- Tests: `npm test`
+
+
+## License
+
+MIT
