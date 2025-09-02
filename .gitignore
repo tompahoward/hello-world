@@ -4,3 +4,4 @@ node_modules/
 .voder/.processes.json
 dist/
 coverage/
+/remote.git
