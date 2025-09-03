@@ -1,6 +1,6 @@
 # Hello World
 
-[![CI](https://github.com/tomhoward/hello-world/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/tomhoward/hello-world/actions/workflows/ci.yml?query=branch%3Amain)
+[![CI](https://github.com/tompahoward/hello-world/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/tompahoward/hello-world/actions/workflows/ci.yml?query=branch%3Amain)
 
 Note: the CI badge above is a placeholder that currently points to the repository's `main` branch. After this PR is merged, update the badge URL to point to the correct workflow/branch badge for this repository if desired.
 
