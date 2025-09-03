@@ -20,6 +20,21 @@ module.exports = [
         clearTimeout: 'readonly',
       },
     },
-    rules: {},
+    rules: {
+      // Encourage using const when variables are not reassigned
+      'prefer-const': 'error',
+
+      // Disallow duplicate imports which are often accidental
+      'no-duplicate-imports': 'error',
+
+      // Warn on unused variables (but allow unused leading-underscore args)
+      'no-unused-vars': [
+        'warn',
+        { args: 'after-used', argsIgnorePattern: '^_' },
+      ],
+
+      // Enforce === and !== for safer equality checks
+      eqeqeq: 'error',
+    },
   },
 ];
