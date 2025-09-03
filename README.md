@@ -50,6 +50,8 @@ If you import the module normally, `runCli()` will not run automatically — you
 
 Recommended Node.js version: >= 18
 
+Note: The variables listed in `.env.example` (OPENAI_API_KEY, OPENAI_MODEL, VODER_AGENTIC_MODE) are optional for basic CLI usage; they can be used to supply an OpenAI API key, select an OpenAI model, or enable an "agentic" mode for advanced behavior.
+
 Troubleshooting: Ensure Node.js >= 18 (node -v) when running tests/CLI.
 
 Quality checks:
