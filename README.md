@@ -1,6 +1,6 @@
 # Hello World
 
-[![CI](https://github.com/tomhoward/hello-world/actions/workflows/ci.yml/badge.svg)](https://github.com/tomhoward/hello-world/actions/workflows/ci.yml)
+[![CI](https://github.com/tomhoward/hello-world/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/tomhoward/hello-world/actions/workflows/ci.yml?query=branch%3Amain)
 
 A minimal Node.js ESM CLI that prints "Hello, World!" and exposes two functions for use as a module: `hello()` and `runCli()`.
 
