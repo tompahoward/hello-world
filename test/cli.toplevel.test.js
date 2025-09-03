@@ -1,3 +1,4 @@
+import path from 'path'
 import { describe, it, expect, vi } from 'vitest'
 import { importFreshAsScript, installConsoleLogSpy } from './utils/cli.js'
 
@@ -9,7 +10,7 @@ describe('top-level ESM evaluation', () => {
       // Import the script as if it were executed directly. The helper sets
       // process.argv[1] and adds a cache-busting query so Node evaluates the
       // module fresh even if previously imported.
-      await importFreshAsScript('./src/index.js')
+      await importFreshAsScript(path.resolve('./src/index.js'))
 
       expect(logSpy).toHaveBeenCalledWith('Hello, World!')
     } finally {
