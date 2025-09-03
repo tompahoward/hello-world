@@ -1,0 +1,24 @@
+
+> hello-world@1.0.0 test
+> vitest --coverage
+
+
+ RUN  v3.2.4 /Users/tomhoward/Projects/hello-world
+      Coverage enabled with v8
+
+ ✓ test/cli.inprocess.consolidated.test.js (1 test) 8ms
+ ✓ test/cli.toplevel.test.js (1 test) 11ms
+ ✓ test/hello.test.js (3 tests) 199ms
+
+ Test Files  3 passed (3)
+      Tests  5 passed (5)
+   Start at  12:57:30
+   Duration  1.31s (transform 70ms, setup 0ms, collect 128ms, tests 218ms, environment 1ms, prepare 542ms)
+
+ % Coverage report from v8
+----------|---------|----------|---------|---------|-------------------
+File      | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+----------|---------|----------|---------|---------|-------------------
+All files |     100 |      100 |     100 |     100 |                   
+ index.js |     100 |      100 |     100 |     100 |                   
+----------|---------|----------|---------|---------|-------------------
