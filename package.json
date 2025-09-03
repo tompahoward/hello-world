@@ -14,9 +14,9 @@
     "prepare": "husky install"
   },
   "keywords": [],
-  "author": "",
+  "author": "Tom Howard <tom@users.noreply.github.com>",
   "license": "MIT",
-  "description": "",
+  "description": "Minimal Node.js ESM CLI that prints 'Hello, World!'",
   "devDependencies": {
     "@vitest/coverage-v8": "^3.2.4",
     "eslint": "^9.34.0",
