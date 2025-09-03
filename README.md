@@ -38,6 +38,8 @@ runCli(); // prints 'Hello, World!' to stdout
 - `hello()` — returns the string "Hello, World!".
 - `runCli()` — performs the top-level CLI behavior (prints the message to stdout). This is exported so tests or other code can invoke the CLI behavior without spawning a separate process.
 
+For more details and usage examples see: `docs/API.md`
+
 ### CLI entrypoint
 
 The source file (`src/index.js`) contains a shebang (`#!/usr/bin/env node`) so it can be executed as a script. When the module is evaluated as a top-level script (for example with `node ./src/index.js` or via `npm start`) the module detects this and calls `runCli()` automatically:
@@ -55,6 +57,23 @@ If you import the module normally, `runCli()` will not run automatically — you
 Recommended Node.js version: >= 18
 
 Note: The variables listed in `.env.example` (OPENAI_API_KEY, OPENAI_MODEL, VODER_AGENTIC_MODE) are optional for basic CLI usage (for example running `npm start`). They can be used to supply an OpenAI API key, select an OpenAI model, or enable an "agentic" mode for advanced behavior when extended, but they are not required for the minimal "Hello, World!" CLI behavior.
+
+Developer setup
+
+- Recommended Node.js version is documented in `package.json` (`engines.node: ">=18"`).
+- Install dev dependencies with:
+
+```bash
+npm ci
+```
+
+- Run quality checks locally:
+
+```bash
+npm run format
+npm run lint
+npm test
+```
 
 Troubleshooting: Ensure Node.js >= 18 (node -v) when running tests/CLI.
 
