@@ -4,7 +4,14 @@
 module.exports = [
   // Ignore node_modules and generated coverage reports
   {
-    ignores: ['node_modules/**', 'coverage/**'],
+    ignores: [
+      'node_modules/**',
+      'coverage/**',
+      'dist/**',
+      'remote.git/**',
+      '.voder/**',
+      '.env',
+    ],
   },
   // Apply basic language options to all JS files
   {
