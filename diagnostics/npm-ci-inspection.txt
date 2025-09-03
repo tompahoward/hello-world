@@ -1,0 +1,22 @@
+Inspection of npm-ci-log.txt
+
+Source file: npm-ci-log.txt
+
+Observed error lines (exact):
+
+npm error code ETARGET
+npm error notarget No matching version found for lint-staged@^14.3.0.
+npm error notarget In most cases you or one of your dependencies are requesting
+npm error notarget a package version that doesn't exist.
+npm error A complete log of this run can be found in: /Users/tomhoward/.npm/_logs/2025-09-03T02_56_40_693Z-debug-0.log
+
+Interpretation:
+- npm ci failed with an ETARGET (No matching version) for lint-staged@^14.3.0.
+- This indicates the requested devDependency version could not be resolved from the registry or the lockfile pins an unavailable version.
+
+Next planned steps (per the project plan):
+1) Collect non-interactive diagnostics: npm ls lint-staged --json, npm outdated --json, inspect package.json/package-lock.json entries.
+2) Attempt a minimal repair: npm install --package-lock-only --no-audit --no-fund to refresh the lockfile.
+3) Re-run npm ci and proceed with pinning lint-staged only if necessary.
+
+This file records the result of the "NOW" action in the implementation plan: examine the captured npm ci install log and note the precise error.
