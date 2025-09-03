@@ -4,20 +4,20 @@
 module.exports = [
   // Ignore node_modules and generated coverage reports
   {
-    ignores: ["node_modules/**", "coverage/**"],
+    ignores: ['node_modules/**', 'coverage/**'],
   },
   // Apply basic language options to all JS files
   {
-    files: ["**/*.js"],
+    files: ['**/*.js'],
     languageOptions: {
-      ecmaVersion: "latest",
-      sourceType: "module",
+      ecmaVersion: 'latest',
+      sourceType: 'module',
       globals: {
-        process: "readonly",
-        console: "readonly",
-        Buffer: "readonly",
-        setTimeout: "readonly",
-        clearTimeout: "readonly",
+        process: 'readonly',
+        console: 'readonly',
+        Buffer: 'readonly',
+        setTimeout: 'readonly',
+        clearTimeout: 'readonly',
       },
     },
     rules: {},

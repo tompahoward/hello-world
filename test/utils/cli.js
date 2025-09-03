@@ -1,5 +1,5 @@
-import path from 'path'
-import { pathToFileURL } from 'url'
+import path from 'path';
+import { pathToFileURL } from 'url';
 
 /**
  * Create a fresh dynamic import of a script while temporarily setting process.argv[1]
@@ -11,19 +11,19 @@ import { pathToFileURL } from 'url'
  * @returns {Promise<Module>} - The imported module namespace object
  */
 export async function importFreshAsScript(scriptPath) {
-  const resolved = path.resolve(scriptPath)
-  const originalArg1 = process.argv[1]
+  const resolved = path.resolve(scriptPath);
+  const originalArg1 = process.argv[1];
 
   try {
     // Pretend the module was invoked directly
-    process.argv[1] = resolved
+    process.argv[1] = resolved;
 
     // Import the file:// URL directly so V8 coverage maps to the original file
-    const fileUrl = pathToFileURL(resolved).href
-    return await import(fileUrl)
+    const fileUrl = pathToFileURL(resolved).href;
+    return await import(fileUrl);
   } finally {
     // Always restore global state
-    process.argv[1] = originalArg1
+    process.argv[1] = originalArg1;
   }
 }
 
@@ -37,5 +37,5 @@ export async function importFreshAsScript(scriptPath) {
  * @returns {import('vitest').SpyInstance} - The created spy instance
  */
 export function installConsoleLogSpy(vi) {
-  return vi.spyOn(console, 'log').mockImplementation(() => {})
+  return vi.spyOn(console, 'log').mockImplementation(() => {});
 }

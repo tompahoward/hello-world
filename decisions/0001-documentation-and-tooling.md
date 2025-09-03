@@ -32,4 +32,3 @@ Alternatives considered
 
 - Do nothing: rely on the README alone. Rejected because developer-facing details were missing.
 - Add extensive external docs/site: rejected due to project size and maintenance overhead.
-

@@ -1,5 +1,7 @@
 # Hello World
 
+[![CI](https://github.com/<owner>/<repo>/actions/workflows/ci.yml/badge.svg)](https://github.com/<owner>/<repo>/actions/workflows/ci.yml)
+
 A minimal Node.js ESM CLI that prints "Hello, World!" and exposes two functions for use as a module: `hello()` and `runCli()`.
 
 ## Installation
