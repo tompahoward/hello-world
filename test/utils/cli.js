@@ -18,8 +18,8 @@ export async function importFreshAsScript(scriptPath) {
     // Pretend the module was invoked directly
     process.argv[1] = resolved
 
-    // Add a cache-busting query so Node will evaluate the module fresh
-    const fileUrl = pathToFileURL(resolved).href + `?cachebust=${Date.now()}`
+    // Import the file:// URL directly so V8 coverage maps to the original file
+    const fileUrl = pathToFileURL(resolved).href
     return await import(fileUrl)
   } finally {
     // Always restore global state
