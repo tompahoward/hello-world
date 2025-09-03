@@ -18,6 +18,12 @@ npm ci
 - Format: `npm run format` (Prettier)
 - Tests: `npm test` (Vitest)
 
+Running the CLI and tests locally
+
+- Preferred local CLI invocation: `npm start` (this runs `node ./src/index.js`). You can also run the CLI directly with `node ./src/index.js` if you prefer.
+
+- Run tests with coverage: `npm test`. The test runner (Vitest) will produce coverage output under the `coverage/` directory. The HTML coverage report can be viewed at `coverage/lcov-report/index.html` after the tests complete.
+
 Development workflow
 
 - Create a feature branch from main for your changes.
