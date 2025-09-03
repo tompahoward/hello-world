@@ -1,5 +1,0 @@
-npm error code ETARGET
-npm error notarget No matching version found for lint-staged@^14.3.0.
-npm error notarget In most cases you or one of your dependencies are requesting
-npm error notarget a package version that doesn't exist.
-npm error A complete log of this run can be found in: /Users/tomhoward/.npm/_logs/2025-09-03T02_56_40_693Z-debug-0.log
