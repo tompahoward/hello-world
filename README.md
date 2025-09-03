@@ -50,6 +50,8 @@ If you import the module normally, `runCli()` will not run automatically — you
 
 Recommended Node.js version: >= 18
 
+Troubleshooting: Ensure Node.js >= 18 (node -v) when running tests/CLI.
+
 Quality checks:
 
 - Lint: `npm run lint`
