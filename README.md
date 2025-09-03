@@ -2,6 +2,8 @@
 
 [![CI](https://github.com/tomhoward/hello-world/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/tomhoward/hello-world/actions/workflows/ci.yml?query=branch%3Amain)
 
+Note: the CI badge above is a placeholder that currently points to the repository's `main` branch. After this PR is merged, update the badge URL to point to the correct workflow/branch badge for this repository if desired.
+
 A minimal Node.js ESM CLI that prints "Hello, World!" and exposes two functions for use as a module: `hello()` and `runCli()`.
 
 ## Installation
@@ -12,20 +14,22 @@ npm ci
 
 ## Usage
 
-Run the CLI:
+Run the CLI (shell):
 
 ```bash
 npm start
+# or
+node ./src/index.js
 ```
 
-Or import the functions in your code:
+Or import the functions in your code (programmatic usage):
 
 ```js
 import { hello, runCli } from './src/index.js';
 
 console.log(hello()); // 'Hello, World!'
 
-// invoke the CLI behavior programmatically
+// invoke the CLI behavior programmatically in-process
 runCli(); // prints 'Hello, World!' to stdout
 ```
 
@@ -50,7 +54,7 @@ If you import the module normally, `runCli()` will not run automatically — you
 
 Recommended Node.js version: >= 18
 
-Note: The variables listed in `.env.example` (OPENAI_API_KEY, OPENAI_MODEL, VODER_AGENTIC_MODE) are optional for basic CLI usage; they can be used to supply an OpenAI API key, select an OpenAI model, or enable an "agentic" mode for advanced behavior.
+Note: The variables listed in `.env.example` (OPENAI_API_KEY, OPENAI_MODEL, VODER_AGENTIC_MODE) are optional for basic CLI usage (for example running `npm start`). They can be used to supply an OpenAI API key, select an OpenAI model, or enable an "agentic" mode for advanced behavior when extended, but they are not required for the minimal "Hello, World!" CLI behavior.
 
 Troubleshooting: Ensure Node.js >= 18 (node -v) when running tests/CLI.
 
