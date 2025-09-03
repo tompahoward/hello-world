@@ -2,9 +2,9 @@
 // This keeps linting functional in the CI and local environments for this small project.
 
 module.exports = [
-  // Ignore node_modules
+  // Ignore node_modules and generated coverage reports
   {
-    ignores: ["node_modules/**"],
+    ignores: ["node_modules/**", "coverage/**"],
   },
   // Apply basic language options to all JS files
   {
